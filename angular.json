@@ -100,9 +100,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "deployUrl": "/my-website/",
-            "baseHref": "/my-website/"
+            "scripts": []
           }
         }
       }
