@@ -1,0 +1,59 @@
+<div class="bg-gray-100 w-full h-full flex justify-center items-center">
+    <form [formGroup]="fg" (ngSubmit)="onSubmit()" method="post" action=" ">
+
+        <div class="flex flex-row bg-white rounded-lg drop-shadow-3xl w-full max-w-6xl p-10 gap-x-8">
+            <div class="text-left mr-16 max-w-md">
+                <p class="font-sans font-black text-4xl leading-relaxed mb-3" data-aos="fade-down"
+                    data-aos-duration="600" data-aos-easing="linear">Let's collaborate!</p>
+                <p class="leading-8 font-sans text-base text-gray-600" data-aos="fade-right" data-aos-duration="800"
+                    data-aos-easing="linear">
+                    Connect with me today to discuss about design, development <br>
+                    or chat about Hiphop!. Let's collaborate on creating <br>
+                    impactful solutions together.</p> &nbsp;
+                <div class="flex flex-row justify-start gap-x-6" data-aos="fade-up" data-aos-duration="700"
+                    data-aos-easing="ease-in-out">
+
+                    <a href="https://mail.google.com/mail/?view=cm&to=ashikirfan2000@gmail.com"
+                        title="Contact via Gmail" target="_blank">
+                        <img src="g.png" alt="Gmail" class="w-8 h-8">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=9500027370&text=Hello%20there!"
+                        title="Contact via Whatsapp" target="_blank">
+                        <img src="w.png" alt="Whatsapp" class="w-8 h-8">
+                    </a>
+                    <a href="linkedin.com/in/ashik-irfan-west-coast22" title="Linkedin" target="_blank">
+                        <img src="l.png" alt="Linkedin" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.behance.net/ashii-west-coast22" title="Behance icon" target="_blank">
+                        <img src="b.png" alt="Behance" class="w-8 h-8">
+                    </a>
+                    <a href="https://pin.it/2em6i9g0f" title="Pinterest icon" target="_blank">
+                        <img src="p.png" alt="Pinterest" class="w-8 h-8">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="w-full max-w-md" data-aos="fade-left" data-aos-duration="700" data-aos-easing="linear">
+                <p>Or leave a message and I'll get back as soon as I can!</p>
+                <div class="flex flex-row gap-3 my-4">
+                    <input type="text" name="name" [formControl]="name_fc"
+                        class="w-1/2 p-3 rounded-xl border-gray-300 bg-gray-200 placeholder-gray-500 focus:ring-2 focus:ring-gray-400 focus:outline-none"
+                        placeholder="Name">
+                    <input type="text" name="email" [formControl]="email_fc"
+                        class="w-1/2 p-3 rounded-xl border-gray-300 bg-gray-200 placeholder-gray-500 focus:ring-2 focus:ring-gray-400 focus:outline-none"
+                        placeholder="Email">
+                </div>
+
+                <textarea class="w-full p-3 rounded-xl bg-gray-200 placeholder-gray-500 
+                     focus:outline-none focus:ring-2 focus:ring-gray-400" [formControl]="message_fc"
+                    placeholder="Message" name="message" row="4">
+            </textarea>
+
+                <button
+                    class="bg-red-800 text-white hover:bg-red-400 transition ease-in-out duration-100 p-2 w-full rounded-xl mt-3">Send</button>
+
+            </div>
+        </div>
+    </form>
+</div>
